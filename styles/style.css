@@ -1,0 +1,133 @@
+:root {
+  --fontSize: calc(0.75vh + 0.75vw);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Shadows+Into+Light&display=swap");
+
+*,
+*::after,
+*::before {
+  outline: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+.title,
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: gainsboro;
+}
+
+.wrapper {
+  height: 80%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  height: 40%;
+  font-size: calc(var(--fontSize) * 4);
+  letter-spacing: 5px;
+}
+
+.container {
+  height: 60%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title,
+.container {
+  width: 100%;
+}
+
+.description,
+.button {
+  position: absolute;
+}
+
+.d1 {
+  display: none;
+}
+
+.time {
+  justify-content: space-between;
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-family: "Shadows Into Light", cursive;
+}
+
+.description {
+  top: 0;
+  font-size: calc(var(--fontSize) * 2);
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.button {
+  bottom: 0;
+}
+
+.time-number {
+  font-family: "Shadows Into Light", cursive;
+  font-size: calc(var(--fontSize) * 2);
+  background: #ffdf11;
+  border-radius: 50%;
+  border: 5px solid #d6bb0d;
+  box-shadow: 10px 10px rgb(151, 151, 151);
+}
+
+.button-num {
+  font-size: calc(var(--fontSize) * 1.25);
+  font-family: "Shadows Into Light", cursive;
+  padding: 15px 25px;
+  background: white;
+  box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.time button {
+  background: transparent;
+}
+
+.button button {
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 2.5px;
+  background-color: rgb(255, 188, 17);
+  font-size: calc(var(--fontSize) * 1.5);
+  padding: 10px 35px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+button,
+.button-num {
+  cursor: pointer;
+}
